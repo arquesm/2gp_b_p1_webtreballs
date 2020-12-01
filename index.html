@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Treballs RIA</title>
+    <style type="text/css">
+        /*reset*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        html {
+            font-size: 20px;
+        }
+
+        /*fonts*/
+        body {
+            font-family: 'PT Sans', sans-serif;
+        }
+
+        .grid-container {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            padding: 2em 2em;
+            width: 100%;
+            height: 100vh;
+            color: white;
+            background-color: #2B9E69;
+            background-image: url('img/pattern.png');
+            background-size: cover;
+            background-position: -30px;
+            font-weight: 700;
+            justify-content: space-between;
+        }
+
+        h1 {
+            font-size: 16vw;
+            line-height: 15vw;
+        }
+
+        h1 span {
+            position: absolute;
+            margin: -1vw 0 0 0;
+            font-size: 5.5vw;
+        }
+
+        h2 {
+            font-size: 5.5vw;
+        }
+
+        h3 {
+            font-size: 4vw;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            display: flex;
+            padding: 0 2em;
+            align-items: center;
+            justify-content: space-around;
+            background-color: #2B9E69;
+            height: 120px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        main {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 4em 2em 2em 2em;
+            background-color: #F4ECEC;
+        }
+        main section {
+            width: 100%;
+            padding: 0.6em 0.6em 0 0.6em;
+            margin-bottom: 1em;
+            display: flex;
+            flex-direction: column;
+            background-color: #2B9E69;
+            border-radius: 5px;
+        }
+
+        main section figure {
+            width: 100%;
+            height: 232px;
+        }
+
+        main section figure img {
+            max-height: 100%;
+            max-width: 100%;
+            object-position: center top;
+            object-fit: cover;
+        }
+
+        main section figcaption {
+            display: flex;
+            color: white;
+            background: #2B9E69;
+            height: 40px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 263px;
+            padding: 1em 2em;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5em;
+            text-transform: uppercase;
+        }
+
+        .xxss {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .email {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 767px) {
+            body {
+                background: #2B9E69;
+            }
+
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            body {
+                background: red;
+            }
+
+            header {
+                background-image: url(img/pattern_tablet.png);
+                background-position: center;
+            }
+
+            h1 {
+                width: 55%;
+                margin: auto;
+                font-size: 8vw;
+                line-height: 7vw;
+            }
+
+            h1 span {
+                width: 55%;
+                margin: auto;
+                position: relative;
+                font-size: 3.7vw; 
+                top: -20px;
+                padding: 20vw 0 0 0;
+                text-align: left;
+            }
+
+            h2 {
+                width: 55%;
+                margin: auto;
+                font-size: 3.6vw;
+            }
+
+            h3 {
+                width: 55%;
+                margin: auto;
+            }
+            nav{
+                font-size: 1.5em;
+                padding: 0 30vw;
+            }
+            .grid-container{
+                width: 90%;
+                margin: auto;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            main section{
+                max-width: 47.5%;
+                margin: 0.5em;
+            }
+        }
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {
+            body {
+                background: #2B9E69;
+            }
+            h1{
+                width: 80%;
+            }
+            h2{
+                width: 80%;
+                text-align: right;
+            }
+            h1 br{
+                display:none;
+            }
+           
+            main section{
+                max-width: 31%;
+                margin: 0.5em;
+            }
+            footer{
+                align-items: center;
+                flex-direction: row;
+            }
+            .xxss{
+                width: 65%;
+                justify-content: space-between;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Recursos<br> Interactius<br> Aplicats<br>
+            <span>a la gráfica publicitària</span>
+        </h1>
+        <h2>CFGS Gráfica Publicitària<br> EASDAlcoi 20/21</h2>
+        <h3>Magda Arques</h3>
+    </header>
+    <nav class="nav">
+        <a href="">projectes</a>
+        <a href="">contacte</a>
+    </nav>
+    <main class="main">
+        <div class="grid-container">
+            <a href="https://arquesm.github.io/p0_llocweb/"><section>
+                <figure>
+                    <img src="img/p0.png" alt="p0_llocweb">
+                </figure>
+                <figcaption>
+                    <h4>p0_llocweb</h4>
+                </figcaption>
+            </section></a>
+            <section>
+                <figure>
+                    <img src="img/p0.png" alt="p1_webtreballs">
+                </figure>
+                <figcaption>
+                    <h4>p1_webtreballs</h4>
+                </figcaption>
+            </section>
+            <section>
+                <figure>
+                    <img src="img/p0.png" alt="p0_llocweb">
+                </figure>
+                <figcaption>
+                    <h4>p0_llocweb</h4>
+                </figcaption>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="xxss">
+            <a href="http://www.ello.com/magdaarques">ello</a>
+            <a href="http://www.instagram.com/magdaarques">insta</a>
+            <a href="http://www.twitter.com/magdaarques">twitter</a>
+        </div>
+        <div class="email">
+            <a href="mailto:magdaarques@gmail.com">B-)</a>
+        </div>
+    </footer>
+</body>
+
+</html>
